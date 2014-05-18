@@ -1,5 +1,5 @@
 ## Programming Assignment 2 - Lexical Scoping
-## The following program creates a special type of "matrix" that can cache its own inverse
+## The following program creates a special type of "matrix" that can cache its own inverse.
 ## It is useful for saving computational effort of obtaining the inverse of a matrix for 
 ## which the inverse was previously calculated.
 ## In reality, the "matrix" is a list of functions that allow for caching the inverse.
