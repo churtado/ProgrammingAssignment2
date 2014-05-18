@@ -4,7 +4,6 @@
 ## which the inverse was previously calculated.
 ## In reality, the "matrix" is a list of functions that allow for caching the inverse.
 
-## In summary, its an exercise on how to use closures in R
 
 ## In this function, we define a method to get the matrix itself, get its inverse, or set 
 ## the value of the matrix or its inverse.
