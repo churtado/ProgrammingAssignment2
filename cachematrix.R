@@ -10,7 +10,7 @@
 makeCacheMatrix <- function(x = matrix()) {
 
       #Set the inverse initially to null
-      i<-NULL
+      i <- NULL
       
       #Set the matrix to be equal to what is passed in y
       set <- function(y){
@@ -28,7 +28,7 @@ makeCacheMatrix <- function(x = matrix()) {
       getinverse <- function() i
       
       #Return a list of all of these functions
-      list(set = set, get = get, setinverse=setinverse, getinverse=getinverse)
+      list(set = set, get = get, setinverse = setinverse, getinverse = getinverse)
   
 }
 
@@ -45,8 +45,10 @@ cacheSolve <- function(x, ...) {
     
       ## If the value of the inverse is calculated (it's not NULL), simply return it and we're done
       if(!is.null(i)){
+        
             print('Returning cached value')
             return(i)
+            
       }
       
       ## If the return statment was not executed, the rest of the function gets executed
