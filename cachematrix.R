@@ -45,6 +45,7 @@ cacheSolve <- function(x, ...) {
     
       ## If the value of the inverse is calculated (it's not NULL), simply return it and we're done
       if(!is.null(i)){
+            print('Returning cached value')
             return(i)
       }
       
@@ -53,8 +54,8 @@ cacheSolve <- function(x, ...) {
       ## Obtain the matrix value with its get() function
       matrix <- x$get()
       
-      ## Use the solve() function to obtain the inverse
-      i <- solve(x)
+      ## Use the solve() function on the actual matrix to obtain the inverse
+      i <- solve(x$get())
       
       ## Set the inverse into our special "matrix"
       x$setinverse(i)
